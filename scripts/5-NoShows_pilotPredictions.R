@@ -19,7 +19,7 @@
   fileName = args[3]
   
   # Global parameters
-  scriptDirectory = "C:/Projectes/000_Incompareixences/GitRepo/NoShows_GitHub/"
+  functionDirectory = "./functions/"
   sourceDataset = paste0(workingDirectory, fileName)
   modelPath = paste0(workingDirectory, medicalSpecility,".model")
   outputPathControl = paste0(fileName,"_Control.csv")
@@ -29,9 +29,9 @@
 # 1. Load data and functions ###########
   
   datos = read.table(file = sourceDataset,header=T,sep=";",dec=",", na.strings = "")
-  source(file = paste0(scriptDirectory, "NoShows_distanceFunctions.R"))
-  source(file = paste0(scriptDirectory, "NoShows_processingFunctions.R"))
-  source(file = paste0(scriptDirectory, "NoShows_modellingFunctions.R"))
+  source(file = paste0(functionDirectory, "NoShows_distanceFunctions.R"))
+  source(file = paste0(functionDirectory, "NoShows_processingFunctions.R"))
+  source(file = paste0(functionDirectory, "NoShows_modellingFunctions.R"))
   load(modelPath)
 
 # 2. Data processing / Feature engineering ###########

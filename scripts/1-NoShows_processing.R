@@ -12,8 +12,8 @@
   suppressWarnings(suppressMessages(library(geosphere)))
 
   # Global parameters
-  workingDirectory = "C:/Projectes/000_Incompareixences/GitRepo/outputs/"
-  scriptDirectory = "C:/Projectes/000_Incompareixences/GitRepo/NoShows_GitHub/"
+  workingDirectory = "./outputs/"
+  functionDirectory = "./functions/"
   fileName = "DatosModeloIncomparecencia"
   medicalSpecility = "DERCEHMB" # DERCEHMB and PNECEHMB
   sourceDataset = paste0(workingDirectory, fileName, medicalSpecility, ".txt")
@@ -22,8 +22,8 @@
 # 1. Load data and functions ###########
   
   datos = read.table(file = sourceDataset,header=T,sep=";",dec=",", na.strings = "")
-  source(file = paste0(scriptDirectory, "NoShows_distanceFunctions.R"))
-  source(file = paste0(scriptDirectory, "NoShows_processingFunctions.R"))
+  source(file = paste0(functionDirectory, "NoShows_distanceFunctions.R"))
+  source(file = paste0(functionDirectory, "NoShows_processingFunctions.R"))
 
 
 # 2. Data processing / Feature engineering ###########

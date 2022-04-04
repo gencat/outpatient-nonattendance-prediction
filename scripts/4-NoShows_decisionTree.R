@@ -15,19 +15,19 @@
   suppressWarnings(suppressMessages(library(caret)))
   suppressWarnings(suppressMessages(library(data.table)))
   
-  
   # Global parameters
-  workingDirectory = "C:/Projectes/000_Incompareixences/GitRepo/outputs/"
-  scriptDirectory = "C:/Projectes/000_Incompareixences/GitRepo/NoShows_GitHub/"
+  workingDirectory = "./outputs/"
+  functionDirectory = "./functions/"
   fileName = "DatosProcesados"
   medicalSpecility = "DERCEHMB" 
   processedDataset = paste0(workingDirectory, "DatosProcesados", medicalSpecility, ".RData")
   modelPath =  paste0(workingDirectory, medicalSpecility,".model")
   
+  
 # 1. Load data and functions ###########
   
   load(file = processedDataset)
-  source(file = paste0(scriptDirectory, "NoShows_modellingFunctions.R"))
+  source(file = paste0(functionDirectory, "NoShows_modellingFunctions.R"))
 
 
 # 2. Settings ###########
