@@ -4,8 +4,7 @@ This algorithm has been developed and validated in the context of a research pro
 
 For any use (including remix, transform, and build upon the material posted), appropriate credit to the authors must be given by citing the following article, published in a peer-review journal:
 
-Valero-Bover D, Carot-Sans G, Saura P, Otermin P, Garcia C, Gálvez M, Lupiáñez-Villanueva F, and Piera-Jiménez J. Reducing non-attendance in outpatient appointments: predictive model development, validation, and clinical assessment. BMC Health Services Research. 2022 (Accepted; In press). DOI: 10.1186/s12913-022-07865-y
-
+Valero-Bover, D., González, P., Carot-Sans, G. et al. Reducing non-attendance in outpatient appointments: predictive model development, validation, and clinical assessment. BMC Health Serv Res 22, 451 (2022). https://doi.org/10.1186/s12913-022-07865-y
 
 ---
 
