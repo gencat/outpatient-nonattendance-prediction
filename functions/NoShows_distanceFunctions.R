@@ -74,7 +74,7 @@
     # column expects  postal code. coordsHMB are the latitude/longitude of the central point to calculate the distance. 
     # levelBreaks is used to create the different levels 
 
-    postalCodes = readPostalCodes(fileName = "allCountries.txt", workingDir)
+    postalCodes = readPostalCodes(fileName = "allCountriesZIP.txt", workingDir)
 
     # Lookup dataset
     if(is.numeric(column)){
