@@ -83,7 +83,7 @@
   
   # LossMatrix to force optimize negative prediction
   modelo = doDecisionTree(pDF = dfModelo, pVarsNoDummy = varsModel, pVarsDummy = NULL,
-                          pCP = bestCP, pMD = bestMD, percTrain=0.75, lossMatrix = matrix(c(0,1,1.2,0),2))
+                          pCP = bestCP, pMD = bestMD, percTrain=0.75, lossMatrix = matrix(c(0,1.2,1,0),2))
   
   # Confusion Matrix and Statistics
   modelo$cm
