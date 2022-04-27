@@ -91,6 +91,7 @@
   
   # Numeric variable
   dependenceTestNumeric <- function(dat, numeric_vars){
+    dat$Target <- dat$Target == "Yes"
     t = data.frame(Variable = character(),P = character())
     for(numVar in numeric_vars){
       aovResult = unlist(summary(aov(data = dat, formula = as.formula(paste("Target~", numVar)))))
