@@ -132,7 +132,7 @@
   paramGrid=expand.grid( ROW_SAMP ,COL_SAMP ,TREE_DEPT, ETA , MIN_CHILD_WEIGHT , GAMMA, NTREES )
   
 
-  xgResults = crossValXGB(pDF = trainSet[,c(varsTrabajoB,dummyVarsB)], label = trainSet$Target, paramGrid = paramGrid)
+  xgResults = doXGBoostSearch(pDF = trainSet[,c(varsTrabajoB,dummyVarsB)], label = trainSet$Target, paramGrid = paramGrid)
   xgResults
   
   # Select best model based on accuracy and specificity
